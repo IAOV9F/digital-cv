@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Teszt123</div>
+    <div id="header">
+        <div class = "container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div class="header-text"></div>
+        <p>Software Developer</p>
+        <h1>Hi, I'm <span>Tímea</span><br>Keresztes From Hungary</h1>
+    </div>
+    </div>
+    <!---------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic, energetic IT student with software developer knowledge. The problem solving,as a novice computer scientist is my main goal. I prefer Javascript because that is my favourite programming language.</p>
+                    
+                    <div class="tab-titles">
+                    <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class ="tab-links" onclick="opentab('education')">Education</p>
+                
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>-</span><br>Programming</li>
+                        <li><span>-</span><br>Programming</li>
+                        <li><span>-</span><br>Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>2021 september-2022 february</span><br>QNSZT. KFT-Software Developer Intern</li>
+                        <li><span>2016 september- 2017 july</span><br>Senator Ház-Administration</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2019-2023</span><br>Eszterházy Károly Katolikus Egyetem</li>
+                        <li><span>2013-2018</span><br>Andrássy György Katolikus Közgazdasági Középiskola</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
 </body>
 </html>
