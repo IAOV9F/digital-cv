@@ -354,4 +354,12 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
+    .header-text p{
+        margin-bottom: 1.75rem;
+    }
+}
+@media(max-width:1080px){
+    #header{
+    background-image: url(images/phone-background.png);
+    }
 }
