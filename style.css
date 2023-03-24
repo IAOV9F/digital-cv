@@ -43,7 +43,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: rgb(227,51,247);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -61,7 +61,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: rgb(227,51,247);
 }
 /* ---------------about -------------*/
 #about{
@@ -103,7 +103,7 @@ sub-title{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: rgb(227,51,247);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -160,7 +160,7 @@ sub-title{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: rgb(227,51,247);
     transform: translate(-10px);
 }
 #portfolio{
@@ -186,7 +186,7 @@ sub-title{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(227,51,247));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -207,7 +207,7 @@ sub-title{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: rgb(227,51,247);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -227,7 +227,7 @@ sub-title{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid rgb(227,51,247);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -247,7 +247,7 @@ sub-title{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: rgb(227,51,247);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -263,12 +263,12 @@ sub-title{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: rgb(227,51,247);
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: rgb(227,51,247);
 }
 .contact-right form{
     width: 100%;
@@ -301,6 +301,12 @@ form .btn2{
 nav .fas{
     display: none;
 }
+i#icon-x{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -318,7 +324,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: rgb(227,51,247);
         position: fixed;
         top: 0;
         right: -200px;
@@ -361,5 +367,15 @@ nav .fas{
 @media(max-width:1080px){
     #header{
     background-image: url(images/phone-background.png);
+    }
+}
+@media(min-width:601px){
+    i#icon{
+        display: none;
+    }
+}
+@media(min-width:601px){
+    i#icon-x{
+        display: none;
     }
 }
